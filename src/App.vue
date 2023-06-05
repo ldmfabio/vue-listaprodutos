@@ -192,7 +192,7 @@ function getTotal(total, item) {
     <hr />
     <div class="row">
       <div v-for="item in produtos" :key="item.id" class="col-3 prodItem">
-        <b>{{ item.id }} - {{ item.nome }}</b> <br />Preço:
+        <b>{{ item.id }} - {{ item.nome }}</b> <br />Preço (em Reais):
         {{ item.preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) }}
         <br />
         <label for="">Quantidade: {{ item.quantidade }}</label>
